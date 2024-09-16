@@ -35,7 +35,16 @@ figure, body{
 
 .blue-bold{
   color: rgb(0, 150, 220);
+  font-weight: bold;
 }
 
-
+/* tabella */
+thead{
+  background-color: rgb(10, 180, 250);
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+.blue-tab-row{
+  background-color: rgb(170, 230, 250);
+}
 
