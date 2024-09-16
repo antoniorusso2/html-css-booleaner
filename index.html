@@ -8,7 +8,6 @@
 </head>
 
 <body>
-  <!-- Intestazione divisa in logo + sfondo e titolo articolo -->
   <header>
     <!-- section con sfondo blu -->
     <div class="blue-background"> 
@@ -25,98 +24,108 @@
         Internet deve essere al servizio del "bene pubblico: il manifesto di Tim Berners-Lee"
       </h1>
 
-      <footer>
-        <p class="grey">Scritto da <span class="blue-bold">The Booleaner</span></p>
-        <p class="grey">il  <time datetime="">10/10/2020</time></p> 
-      </footer>
+      <div class="author-date">
+        <p class="grey author">Scritto da <span class="blue bold">The Booleaner</span></p>
+        <p class="grey author">il  <time>10/10/2020</time></p> 
+      </div>
     </section>
   </header>
-
-  <main>
-    <!-- 2 foto affiancate con sotto a sinistra piccola descrizione -->
-    <section class="Berners">
-      <div  class="photo1">
+  
+  <!-- container con tutto il corpo della pagina -->
+  <div class="container">
+    <main>
+      <!-- 2 foto affiancate con sotto a sinistra piccola descrizione -->
+      <div  class="photo">
         <figure>
           <img src="./img/tim-1.jpg" alt="Foto Berners-Lee">
           <img src="./img/tim-2.jpg" alt="Foto Berners-Lee">
-
+  
           <figcaption>
-            1st photo: John S. and James L. Knight Foundation, by Scott Henrichsen
+              1st photo: John S. and James L. Knight Foundation, by Scott Henrichsen
           </figcaption>
           <figcaption>
-            2nd Photo: Wikimedia, by Paul Clarke
+              2nd Photo: Wikimedia, by Paul Clarke
           </figcaption>
         </figure>
       </div>    
-    </section>
-
-    <!-- paragrafo lorem lungo con testo evidenziato-->
-    <section>
-      <p class="big-lorem">
-       Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, quod nam tempore quibusdam nesciunt minima expedita enim neque quo, saepe quaerat nostrum amet in ad deserunt quisquam commodi. <mark>Aliquid sit esse odio debitis repellat veniam perspiciatis dignissimos atque a possimus</mark> . Animi, pariatur fugiat. Quidem, ratione nam eos eius repellendus molestiae.
-      </p>
-    </section>
-
-    <!-- ul con 3 punti lorem, il secondo è il continuo del primo-->
-    <section>
-      <ul>
-        <li>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque labore quae, eaque totam ex dolorem nisi laudantium vero incidunt deserunt accusantium. 
-        </li>
-        <li>
-          Doloremque hic fugit adipisci excepturi alias laudantium consectetur sequi temporibus, beatae, eum necessitatibus deserunt perferendis velit a repellendus pariatur?
-        </li>
-        <li>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque labore quae, eaque totam ex dolorem nisi laudantium vero incidunt deserunt accusantium.
-        </li>
-      </ul>
-    </section>
-
-    <!-- tabella a 3 colonne -->
-    <section>
-      <table>
-        <thead>
-          <tr>
-            <td>
-              Lorem, ipsum dolor.
-            </td>
-            <td>
-              Lorem, ipsum dolor.
-            </td>
-            <td>
-              Lorem, ipsum dolor.
-            </td>
-        </thead>
-        
-        <!-- corpo tabella -->
-        <tbody>
-          <tr class="blue-tab-row">
-            <td>Lorem, ipsum dolor.</td>
-            <td>Lorem, ipsum dolor.</td>
-            <td>Lorem, ipsum dolor.</td>
-          </tr>
-          <tr>
-            <td>Lorem, ipsum dolor.</td>
-            <td>Lorem, ipsum dolor.</td>
-            <td>Lorem, ipsum dolor.</td>
-          </tr>
-          <tr class="blue-tab-row">
-            <td>Lorem, ipsum dolor.</td>
-            <td>Lorem, ipsum dolor.</td>
-            <td>Lorem, ipsum dolor.</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
-
-    <!-- altro lorem lungo con testo evidenziato -->
-    <section>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum debitis officiis reiciendis, eos quae repellat rerum natus nisi veritatis ducimus at illum quasi dolores sapiente. <mark>Praesentium perspiciatis facilis molestias sequi</mark>, temporibus, tenetur blanditiis voluptatem architecto ratione dolore laborum et quis, doloremque cupiditate non delectus maiores pariatur placeat id sapiente quae!
-      </p>
-    </section>
     
-    <!-- 2 immagini una sotto all'altra con testo sovrapposto --> 
-  </main>
+      <!-- paragrafo lorem lungo con testo evidenziato-->
+      <div>
+        <p class="big-lorem">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, quod nam tempore quibusdam nesciunt minima expedita enim neque quo, saepe quaerat nostrum amet in ad deserunt quisquam commodi. <mark>Aliquid sit esse odio debitis repellat veniam perspiciatis dignissimos atque a possimus</mark> . Animi, pariatur fugiat. Quidem, ratione nam eos eius repellendus molestiae.
+        </p>
+      </div>
+
+     <!-- ul con 3 punti lorem, il secondo è il continuo del primo-->
+      <div>
+        <ul>
+          <li>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque labore quae, eaque totam ex dolorem nisi laudantium vero incidunt deserunt accusantium. 
+          </li>
+          <li>
+            Doloremque hic fugit adipisci excepturi alias laudantium consectetur sequi temporibus, beatae, eum necessitatibus deserunt perferendis velit a repellendus pariatur?
+          </li>
+          <li>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque labore quae, eaque totam ex dolorem nisi laudantium vero incidunt deserunt accusantium.
+          </li>
+        </ul>
+      </div>
+      
+      <!-- tabella a 3 colonne -->
+      <div>
+        <table class="tab">
+          <thead>
+            <tr>
+              <td>
+                Lorem, ipsum dolor.
+              </td>
+              <td>
+                Lorem, ipsum dolor.
+              </td>
+              <td>
+                Lorem, ipsum dolor.
+              </td>
+          </thead>
+          
+          <!-- corpo tabella -->
+          <tbody>
+            <tr class="blue-tab">
+              <td class="cell">Lorem, ipsum dolor.</td>
+              <td class="cell">Lorem, ipsum dolor.</td>
+              <td class="big-cell">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste dolorum ut quidem, porro enim iusto magni pariatur dolore dicta totam.</td>
+            </tr>
+            <tr>
+              <td class="cell">Lorem, ipsum dolor.</td>
+              <td class="cell">Lorem, ipsum dolor.</td>
+              <td class="big-cell">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste dolorum ut quidem, porro enim iusto magni pariatur dolore dicta totam.</td>
+            </tr>
+            <tr class="blue-tab">
+              <td class="cell">Lorem, ipsum dolor.</td>
+              <td class="cell">Lorem, ipsum dolor.</td>
+              <td class="big-cell">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste dolorum ut quidem, porro enim iusto magni pariatur dolore dicta totam.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+  
+      <div>
+        <!-- altro lorem lungo con testo evidenziato -->
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum debitis officiis reiciendis, eos quae repellat rerum natus nisi veritatis ducimus at illum quasi dolores sapiente. <mark>Praesentium perspiciatis facilis molestias sequi</mark>, temporibus, tenetur blanditiis voluptatem architecto ratione dolore laborum et quis, doloremque cupiditate non delectus maiores pariatur placeat id sapiente quae!
+        </p>
+      </div>
+    </main>
+      
+    <footer>
+      <span class="ads-title grey bold">Potrebbero interessarti</span>
+      <div class="footer-img1 bold">
+          <span>Lorem, ipsum dolor.</span>
+      </div>
+        
+      <div class="footer-img2 bold">
+          <span>Lorem, ipsum dolor.</span>
+      </div> 
+    </footer>
+  </div>  
 </body>
 </html>
